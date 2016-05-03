@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoJoin</key>
+			<true/>
+			<key>EncryptionType</key>
+			<string>WPA</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>Password</key>
+			<string>pros88888</string>
+			<key>PayloadDescription</key>
+			<string>Configures wireless connectivity settings.</string>
+			<key>PayloadDisplayName</key>
+			<string>Wi-Fi Wallet</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.wifi.managed.wifi1</string>
+			<key>PayloadOrganization</key>
+			<string>Wi-Fi Wallet</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>F53A706F-30B8-4A90-AA80-8EF32A6D8257</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>SSID_STR</key>
+			<string>TP-LINK_74C6F4</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Profile description.</string>
+	<key>PayloadDisplayName</key>
+	<string>TP-LINK_74C6F4 Profile</string>
+	<key>PayloadIdentifier</key>
+	<string>com.apple.wifi.managed</string>
+	<key>PayloadOrganization</key>
+	<string>Wi-Fi Wallet</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>FA81DB0E-4457-4A7B-BA72-00DEF0E56781</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
