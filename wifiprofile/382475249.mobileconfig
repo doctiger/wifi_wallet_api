@@ -12,7 +12,7 @@
 			<key>HIDDEN_NETWORK</key>
 			<false/>
 			<key>Password</key>
-			<string>grisho555</string>
+			<string>asdf1234</string>
 			<key>PayloadDescription</key>
 			<string>Configures wireless connectivity settings.</string>
 			<key>PayloadDisplayName</key>
@@ -24,13 +24,13 @@
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
-			<string>6448C8EB-8A38-4722-A2FD-2E14DA8D24A7</string>
+			<string>2E952F8D-7AAB-4595-AD0A-796AA1C8D1BF</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>ProxyType</key>
 			<string>None</string>
 			<key>SSID_STR</key>
-			<string>grisho</string>
+			<string>test1</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>

@@ -1,8 +1,8 @@
 <?php
-$con = mysql_connect("localhost","wifiwall","Asdf1234");
+$con = mysql_connect("localhost","rkrieg","Asdf1234");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
-mysql_select_db("wifiwall_wifiwalletapp", $con);
+mysql_select_db("wifiwalletapp", $con);
 ?>
