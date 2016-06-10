@@ -13,7 +13,11 @@ $latitude      = $_REQUEST['latitude'];
 $location      = $_REQUEST['location'];
 
 mysql_query("INSERT INTO `network_location`( `uid`, `network`, `longitude`, `latitude`, `location`) VALUES ('$uid','$networkname','$longitude','$latitude','$location')");
-echo "Location Updated";
+// echo "Location Updated";
+echo json_encode(array('result' => "Location Updated");
+} else {
+	echo json_encode(array('result' => "Request Error");
 }
+
 mysql_close($con);
 ?>

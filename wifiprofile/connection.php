@@ -1,5 +1,5 @@
 <?php
-$con = mysql_connect("localhost","wifiwall","Griffey$24");
+$con = mysql_connect("localhost","wifiwall","Asdf1234");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());

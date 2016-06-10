@@ -1,17 +1,13 @@
 <?php
 //Share network with friends
 include "connection.php";
-    $json = file_get_contents('php://input');
-	//$json = $_SERVER['HTTP_JSON'];
- 
-    $data = json_decode($json);
- 
-    $uid = $data->userid;
-    $ssid  = $data->ssid;
-    $pwd  = $data->pwd;
-    $ip  = $data->ip;
 
+    // $json = file_get_contents('php://input');
  
+    $uid = $_POST['userid'];
+    $ssid  = $_POST['ssid'];
+    $pwd  = $_POST['pwd'];
+    $ip  = $_POST['ip']; 
   
     mysql_query("Insert into networks (ssid,password,ip_addr,sharedby,self) values ('$ssid','$pwd','$ip','$uid',0)");
    	
@@ -20,6 +16,7 @@ include "connection.php";
 
     $sqlf = mysql_query("Select wid from networks where ip_addr like '$ip' and sharedby like '$uid'");
 		$r = mysql_fetch_array($sqlf);
+		
 		$wid = $r['wid'];
     
 $sql2 = mysql_query("Select user_id from users where user_id in (Select user_id1 from friends where user_id2 like '$uid' UNION ALL Select user_id2 from friends where user_id1 like '$uid')");
@@ -32,6 +29,9 @@ while($row = mysql_fetch_array($sql2))
    $sql2 = mysql_query("Select wid from networks where ssid like '$ssid'"); 
 $r1 = mysql_fetch_array($sql2);
 		$wid1 = $r1['wid']; 
-print $wid1; 
+
+// print $wid1;
+echo json_encode(array('value' => $wid1));
+
 mysql_close($con);
 ?>

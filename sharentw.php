@@ -2,8 +2,7 @@
 //Share network with friends
 include "connection.php";
 
-	$json = $_SERVER['HTTP_JSON'];
- 
+    $json = $_SERVER['HTTP_JSON'];
     $data = json_decode($json);
  
     $uid = $data->userid;
